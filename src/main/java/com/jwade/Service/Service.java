@@ -73,7 +73,7 @@ public class Service {
 
         for(int i = 0; i <4; i++){
             String guessLetter = String.valueOf(guess.charAt(i));
-            if(guess.charAt(1) == answer.charAt(i)){
+            if(guess.charAt(i) == answer.charAt(i)){
                 exact += 1;
             } else if (answer.contains(guessLetter)) {
                 partial += 1;
